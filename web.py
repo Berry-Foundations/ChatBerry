@@ -50,8 +50,8 @@ app_folder = Folder({
 		<meta name="twitter:image" content="{{icon}}">
 	""",
 	"app_name" : "ChatBerry",
-	"icon" : "https://github.com/Berry-Foundations/CrossBerry/blob/main/ChatBerry.png?raw=true",
-	"icon_white" : "https://github.com/Berry-Foundations/CrossBerry/blob/main/ChatBerry%20White.png?raw=true"
+	"icon" : "https://github.com/Berry-Foundations/ChatBerry/blob/main/ChatBerry.png?raw=true",
+	"icon_white" : "https://github.com/Berry-Foundations/ChatBerry/blob/main/ChatBerry%20White.png?raw=true"
 })
 
 # functions
