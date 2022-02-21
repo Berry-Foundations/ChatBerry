@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>{{app_name}} - Add Bot</title>
+
+		{{meta}}
+
+		<link rel="stylesheet" href="/stylesheet">
+		<link rel="icon" href="https://github.com/Berry-Foundations/{{app_name}}/blob/main/{{app_name}}.png?raw=true">
+
+		<script src="https://kit.fontawesome.com/a63f2fde7e.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="logo" onclick="redirect_home();">
+			<img src="https://github.com/Berry-Foundations/{{app_name}}/blob/main/{{app_name}}.png?raw=true">
+		</div>
+		
+		<div class="center-box">
+			<div class="permissions">
+				<center>
+					<h1>Add Bot</h1>
+					<h2>Select Permissions</h2>
+					<div class="permissions-box" id="permissions">
+						<button onclick="add_bot_redirect('safe');">
+							Safe <i class="fa-solid fa-face-smile"></i>
+						</button>
+						<button onclick="add_bot_redirect('default');">
+							Recommended <i class="fa-solid fa-wand-magic-sparkles"></i>
+						</button>
+						<button onclick="add_bot_redirect('admin');">
+							Admin <i class="fa-solid fa-crown"></i>
+						</button>
+						<div class="permission-selections" id="permissions-selections"></div>
+					</div>
+				</center>
+			</div>
+		</div>
+
+		<div class="bg"></div>
+	</body>
+	<script src="/javascript" defer></script>
+</html>

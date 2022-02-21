@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>{{app_name}} - Log In</title>
+
+		{{meta}}
+
+		<link rel="stylesheet" href="/stylesheet">
+		<link rel="icon" href="https://github.com/Berry-Foundations/{{app_name}}/blob/main/{{app_name}}.png?raw=true">
+
+		<script src="https://kit.fontawesome.com/a63f2fde7e.js" crossorigin="anonymous"></script>
+		<script src="/javascript"></script>
+		<script>
+			token_error = {{token_error}};
+
+			if (token_error) {
+				tick = 0;
+				seconds = 3;
+				if (site_get("qload") == "on") {
+					seconds = -1;
+				}
+				ticker = window.setInterval(() => {
+					if (tick > seconds) {
+						window.clearInterval(ticker);
+						location.replace("login-failure");
+					}
+					tick += 1;
+				}, 1000);
+			} else {
+				user_data_keys = {{user_data_keys}};
+				user_data_values = {{user_data_values}};
+
+				for (let index in user_data_keys) {
+					localStorage.setItem(`{{app_name}}-user-data-${user_data_keys[index]}`, user_data_values[index]);
+				}
+				localStorage.setItem(`{{app_name}}-site-data-qload`, 'off');
+				tick = 0;
+				seconds = 3;
+				ticker = window.setInterval(() => {
+					if (tick > seconds) {
+						window.clearInterval(ticker);
+						location.replace("welcome");
+					}
+					tick += 1;
+				}, 1000);
+			}
+		</script>
+	</head>
+	<body>
+		<div class="center-box">
+			<i class="fa-solid fa-circle-notch fa-spin" id="login-spin"></i>
+		</div>
+
+		<div class="bg"></div>
+	</body>
+</html>
