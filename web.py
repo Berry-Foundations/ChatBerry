@@ -37,28 +37,28 @@ class Folder:
 app_folder = Folder({
 	"meta" : """
 		<meta name="description" content="A Cross-Server Connector Bot! It connects one chat to other chats whether it be global chat or private chat! Now connect servers together!">
-		<meta property="og:url" content="https://cross.berrybots.tk/">
+		<meta property="og:url" content="https://chat.berrybots.tk/">
 		<meta property="og:type" content="website">
-		<meta property="og:title" content="CrossBerry">
+		<meta property="og:title" content="ChatBerry">
 		<meta property="og:description" content="A Cross-Server Connector Bot! It connects one chat to other chats whether it be global chat or private chat! Now connect servers together!">
 		<meta property="og:image" content="{{icon}}">
 		<meta name="twitter:card" content="summary_large_image">
-		<meta property="twitter:domain" content="cross.berrybots.tk">
-		<meta property="twitter:url" content="https://cross.berrybots.tk/">
-		<meta name="twitter:title" content="CrossBerry">
+		<meta property="twitter:domain" content="chat.berrybots.tk">
+		<meta property="twitter:url" content="https://chat.berrybots.tk/">
+		<meta name="twitter:title" content="ChatBerry">
 		<meta name="twitter:description" content="A Cross-Server Connector Bot! It connects one chat to other chats whether it be global chat or private chat! Now connect servers together!">
 		<meta name="twitter:image" content="{{icon}}">
 	""",
-	"app_name" : "CrossBerry",
-	"icon" : "https://github.com/Berry-Foundations/CrossBerry/blob/main/CrossBerry.png?raw=true",
-	"icon_white" : "https://github.com/Berry-Foundations/CrossBerry/blob/main/CrossBerry%20White.png?raw=true"
+	"app_name" : "ChatBerry",
+	"icon" : "https://github.com/Berry-Foundations/CrossBerry/blob/main/ChatBerry.png?raw=true",
+	"icon_white" : "https://github.com/Berry-Foundations/CrossBerry/blob/main/ChatBerry%20White.png?raw=true"
 })
 
 # functions
 file = app_folder.fileread
 
 # app
-app = flask.Flask("CrossBerry")
+app = flask.Flask("ChatBerry")
 app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
 
 @app.route('/')
