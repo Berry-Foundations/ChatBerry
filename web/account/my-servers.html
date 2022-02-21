@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>{{app_name}} - My Servers</title>
+
+		{{meta}}
+
+		<link rel="stylesheet" href="/stylesheet">
+		<link rel="icon" href="https://github.com/Berry-Foundations/{{app_name}}/blob/main/{{app_name}}.png?raw=true">
+
+		<script src="https://kit.fontawesome.com/a63f2fde7e.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="logo" onclick="redirect_home();">
+			<img src="https://github.com/Berry-Foundations/{{app_name}}/blob/main/{{app_name}}.png?raw=true">
+		</div>
+
+		<div class="servers">
+			<center>
+				<h2>
+					My Servers
+				</h2>
+				<div class="user-actions">
+					<button onclick="redirect('/oauth/bot');">
+						Add <i class="fa-solid fa-plus"></i>
+					</button>
+				</div>
+				<div class="server-list"></div>
+			</center>
+		</div>
+
+		<div class="bg"></div>
+	</body>
+	<script src="/javascript"></script>
+	<script>
+	</script>
+</html>

@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>{{app_name}} - Profile</title>
+
+		{{meta}}
+
+		<link rel="stylesheet" href="/stylesheet">
+		<link rel="icon" href="https://github.com/Berry-Foundations/{{app_name}}/blob/main/{{app_name}}.png?raw=true">
+
+		<script src="https://kit.fontawesome.com/a63f2fde7e.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="logo" onclick="redirect_home();">
+			<img src="https://github.com/Berry-Foundations/{{app_name}}/blob/main/{{app_name}}.png?raw=true">
+		</div>
+
+		<div class="profile">
+			<center>
+				<img id="welcome-user-avatar" />
+				<h2 id="welcome-user-name"></h2>
+				<button onclick="logout();">
+					Log Out <i class="fa-solid fa-right-from-bracket"></i>
+				</button>
+			</center>
+		</div>
+
+		<div class="bg"></div>
+	</body>
+	<script src="/javascript"></script>
+	<script>
+		welcome();
+	</script>
+</html>
